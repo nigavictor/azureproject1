@@ -1,0 +1,9 @@
+{
+	"name": "df-azureproject1",
+	"location": "southafricanorth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9de3b73b-4250-43e6-b73a-87748be9d3cc",
+		"tenantId": "e370714a-69ef-4222-85d3-fabf24e2933b"
+	}
+}
