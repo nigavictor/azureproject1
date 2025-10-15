@@ -1,0 +1,9 @@
+{
+	"name": "df-azureproject-niga",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "91d43674-dc5d-4978-87fb-5afa6f4122a9",
+		"tenantId": "e370714a-69ef-4222-85d3-fabf24e2933b"
+	}
+}
