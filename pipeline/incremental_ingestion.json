@@ -130,7 +130,14 @@
 				"type": "Copy",
 				"state": "Inactive",
 				"onInactiveMarkAs": "Succeeded",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "max_cdc",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
@@ -146,7 +153,7 @@
 							{
 								"name": "cdc",
 								"value": {
-									"value": "egegegrrtnthth",
+									"value": "@activity('max_cdc').output.resultSets[0].rows[0].cdc",
 									"type": "Expression"
 								}
 							}
